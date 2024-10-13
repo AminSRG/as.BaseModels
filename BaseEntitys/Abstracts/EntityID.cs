@@ -2,6 +2,6 @@
 {
     public abstract class EntityID : BaseEntity, Interfaces.IEntityID
     {
-        public Guid ID { get; set; } = Guid.NewGuid();
+        public string Id { get; set; } = Guid.NewGuid().ToString();
     }
 }
